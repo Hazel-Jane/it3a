@@ -57,6 +57,7 @@ $activities = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <a href="./../auth/signout.php">Logout</a>
     </p>
 
+   
 
     <table border="1">
 
