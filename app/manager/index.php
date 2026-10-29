@@ -492,7 +492,7 @@ if($section === 'borrow' && $action === 'return') {
                 <td>
                     <a href="index.php?section=students&action=update&id=<?= $student['student_id'] ?>">Edit</a>
 
-                    <a >Delete</a>
+                    <a href="index.php?section=students&action=delete&id=<?= $student['student_id'] ?>" onclick="return confirm('Are you sure you want to delete this student?')">Delete</a>
                 </td>
             </tr>
             <?php endforeach?>
@@ -629,7 +629,7 @@ if($section === 'borrow' && $action === 'return') {
                 <td>
                     <a href="index.php?section=books&action=update&id=<?= $book['book_id'] ?>">Edit</a>
 
-                    <a >Delete</a>
+                    <a href="index.php?section=books&action=delete&id=<?= $book['book_id'] ?>" onclick="return confirm('Are you sure you want to delete this book?')">Delete</a>
                 </td>
             </tr>
             <?php endforeach?>
@@ -793,3 +793,6 @@ if($section === 'borrow' && $action === 'return') {
 <?php endif; ?>
 
 </html>
+
+
+
